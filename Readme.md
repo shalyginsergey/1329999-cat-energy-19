@@ -1,7 +1,11 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Сергей Шалыгин](https://up.htmlacademy.ru/adaptive/19/user/1329999).
-* Наставник: `Неизвестно`.
+- Студент: [Сергей Шалыгин](https://up.htmlacademy.ru/adaptive/19/user/1329999).
+
+- Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
+
+
+
 
 ---
 
