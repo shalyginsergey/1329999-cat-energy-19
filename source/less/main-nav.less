@@ -4,11 +4,21 @@
   line-height: 20px;
   color: @black-three;
 }
-.main-nav__toggle {
-  border: none;
-  background: none;
+
+@media (min-width: @tablet-width) {
+  .main-nav {
+    //  Временно для сетки
+    min-height: 83px;
+  }
 }
 
-.main-nav__wrapper {
-  display: block;
+@media (min-width: @tablet-width) {
+  .main-nav {
+    //  Временно для сетки
+    min-height: 113px;
+  }
+}
+
+.main-nav__block {
+  display: none;
 }
