@@ -1,6 +1,6 @@
 .page-footer {
+  width: 100%;
   background-color: @bg;
-  .ident();
 }
 
 .page-footer a {
@@ -9,4 +9,34 @@
 
 .page-footer__wrapper {
   background-color: @bg;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    .pd-30();
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    .pd-40();
+  }
+}
+
+.page-footer__logo-image {
+  margin-top: 39px;
+  margin-bottom: 31px;
+}
+
+.page-footer__social {
+  margin-top: 26px;
+  margin-bottom: 24px;
 }
