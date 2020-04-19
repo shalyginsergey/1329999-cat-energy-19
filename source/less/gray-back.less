@@ -1,13 +1,22 @@
 .gray-back {
   margin-top: 20px;
   padding: 20px;
+  padding-top: 29px;
   color: @black-three;
   background-color: @bg;
+}
+
+@media (min-width: @tablet-width) {
+  .gray-back {
+    padding: 80px 315px 62px 52px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .gray-back {
     max-width: 570px;
+    margin-top: 20px;
+    padding: 81px 56px 62px 52px;
   }
 }
 
@@ -15,18 +24,79 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  text-transform: uppercase;
+  padding-left: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .gray-back__title {
+    padding-left: 0;
+    font-size: 36px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gray-back__title {
+    padding-left: 216px;
+  }
 }
 
 .gray-back__description {
   .text-style-Arial();
+  margin-top: 29px;
+}
+
+@media (min-width: @tablet-width) {
+  .gray-back__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 61px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .gray-back__description {
+    margin-top: 75px;
+    margin-bottom: 36px;
+  }
 }
 
 .gray-back__click {
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+@media (min-width: @tablet-width) {
+  .gray-back__click {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .gray-back__click a {
   color: @black-three;
+}
+
+.gray-back__line {
+  border: 1px solid @very-light-gray;
+  margin-bottom: 20px;
+  margin-top: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .gray-back__line {
+    display: none;
+  }
+}
+
+.gray-back__arrow {
+  width: 25px;
+  height: 12px;
+}
+
+.gray-back__item {
+  margin-right: 10px;
+  position: relative;
 }
