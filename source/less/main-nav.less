@@ -1,24 +1,17 @@
 .main-nav {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 20px;
-  color: @black-three;
+  width: 100%;
+  margin-bottom: -13px;
+  margin-top: 13px;
 }
 
 @media (min-width: @tablet-width) {
   .main-nav {
-    //  Временно для сетки
-    min-height: 83px;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: auto;
   }
 }
 
-@media (min-width: @tablet-width) {
-  .main-nav {
-    //  Временно для сетки
-    min-height: 113px;
-  }
-}
-
-.main-nav__wrapper {
+.main-nav--open {
   display: block;
 }
