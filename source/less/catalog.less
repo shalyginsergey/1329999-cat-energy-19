@@ -1,25 +1,24 @@
 .catalog {
   min-height: 103px;
   width: 100%;
-  .pd-20();
-
   display: flex;
   align-items: center;
-
-  border-top: 1px solid @very-light-gray;
-  border-bottom: 1px solid @very-light-gray;
+  border-bottom: 1px solid @solid;
 }
 
 @media (min-width: @tablet-width) {
   .catalog {
+    padding-top: 40px;
+    font-family: "Oswald", sans-serif;
     border-top: none;
     border-bottom: none;
-    .pd-30();
+    margin-bottom: 156px;
   }
 }
 
 .catalog__header {
   margin: 0;
+  letter-spacing: -1.2px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 500;
@@ -30,5 +29,6 @@
   .catalog__header {
     line-height: 60px;
     font-size: 60px;
+    letter-spacing: -2px;
   }
 }

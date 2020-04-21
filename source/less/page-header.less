@@ -37,6 +37,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-header__wrapper {
+    padding-top: 55px;
+  }
+}
+
 .page-header__container {
   display: block;
   position: relative;
@@ -52,6 +58,12 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .page-header__container {
+    .pd-40();
+  }
+}
+
 .page-header__logo {
   display: block;
   width: 100%;
@@ -62,6 +74,13 @@
   .page-header__logo-image {
     width: 174px;
     height: 59px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__logo-image {
+    width: 203px;
+    height: 60px;
   }
 }
 
