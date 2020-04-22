@@ -3,6 +3,18 @@
   padding-top: 10px;
 }
 
+@media (min-width: @tablet-width) {
+  .advantages {
+    padding-top: 44px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages {
+    padding-top: 70px;
+  }
+}
+
 .advantages__title {
   margin-bottom: 33px;
   font-size: 36px;
@@ -14,8 +26,6 @@
   .advantages__title {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 63px;
-    margin-top: 38px;
   }
 }
 
@@ -25,40 +35,24 @@
   margin-bottom: 20px;
 }
 
-.advantages__item:last-child {
-  margin-bottom: 40px;
-}
-
-@media (min-width: @tablet-width) {
-  .advantages__item:last-child {
-    margin-bottom: 0;
-  }
-}
-
 @media (min-width: @tablet-width) {
   .advantages__item {
-    max-width: 300px;
-    flex-direction: column;
-    margin-bottom: 0;
-    padding-right: 80px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: block;
+    min-height: 230px;
+    margin-bottom: 87px;
   }
+}
 
-  @media (min-width: @desktop-width) {
-    .advantages__item {
-      padding-right: 0;
-    }
-  }
-
-  .advantages__item-bg::after {
-    content: "1";
-
-    position: relative;
-    top: -39px;
-    left: 110px;
-    color: @bg;
-    font-size: 281px;
-    line-height: 281px;
-    font-family: "Oswald", "Arial", sans-serif;
+@media (min-width: @desktop-width) {
+  .advantages__item {
+    padding-right: 0;
+    max-width: 25%;
+    flex: 0 0 25%;
+    .pd-40();
   }
 }
 
@@ -89,6 +83,7 @@
     font-size: 281px;
     line-height: 281px;
     font-family: "Oswald", "Arial", sans-serif;
+    z-index: -5;
   }
 }
 
@@ -101,13 +96,17 @@
 @media (min-width: @tablet-width) {
   .advantages__wrapper {
     flex-direction: row;
-    justify-content: space-between;
+    margin-left: -30px;
+    margin-right: -30px;
+    padding-top: 34px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .advantages__wrapper {
     flex-direction: row;
+    margin-left: -40px;
+    margin-right: -40px;
   }
 }
 
@@ -135,7 +134,6 @@
   }
 
   .advantages__item-bg--2 {
-    margin-left: -23px;
     margin-top: 5px;
   }
 }
@@ -162,10 +160,6 @@
   .advantages__item-bg--4::after {
     content: "4";
   }
-
-  .advantages__item-bg--4 {
-    margin-left: -23px;
-  }
 }
 
 .advantages__item-par {
@@ -177,13 +171,8 @@
 @media (min-width: @tablet-width) {
   .advantages__item-par {
     max-width: 250px;
-    margin-bottom: 137px;
     z-index: 5;
     font-size: 16px;
     line-height: 24px;
-  }
-
-  .advantages__item-par:last-child {
-    margin-bottom: 106px;
   }
 }
