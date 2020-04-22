@@ -1,33 +1,20 @@
 .goods {
-  width: 320px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-
-  .pd-20();
 }
 
 @media (min-width: @tablet-width) {
   .goods {
-    width: 768px;
     flex-direction: row;
     justify-content: space-between;
-
-    .pd-30();
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .goods {
-    width: 1300px;
-
-    .pd-40();
   }
 }
 
 .goods__item {
-  padding-bottom: 25px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: @tablet-width) {
