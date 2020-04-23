@@ -77,7 +77,24 @@
 
 @media (min-width: @tablet-width) {
   .invite__logo-image {
+    width: 709px;
+    height: 609px;
+    bottom: -25px;
+    right: 0;
+    margin: 0 auto;
     position: absolute;
     z-index: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .invite__logo-image {
+    position: absolute;
+    top: -25px;
+    left: 20%;
+    bottom: inherit;
+    margin: auto;
+    width: 552px;
+    height: 499px;
   }
 }
