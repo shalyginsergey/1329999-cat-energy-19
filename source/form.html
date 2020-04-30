@@ -45,8 +45,126 @@
       </div>
     </header>
 
-    <main>
+    <main class="page-main">
+      <div class="page-main__wrapper">
+        <h1 class="page-main__title">Подбор программы</h1>
+        <p class="page-main__line">Заполните анкету и мы подберем
+          программу питания для вашего кота</p>
 
+        <div class="choose">
+          <div class="choose__wrapper">
+            <form class="choose__form" action="https://echo.htmlacademy.ru" method="post">
+              <p class="choose__line">
+                <label for="name">Имя:*</label>
+                <input class="choose__input" id="name" type="text" value="Барсик">
+              </p>
+              <p class="choose__line">
+                <label for="weight">Вес (кг):*</label>
+                <input class="choose__input" id="weight" type="number" value="7">
+              </p>
+              <p class="choose__line">
+                <label for="age">Возраст (лет):</label>
+                <input class="choose__input" id="age" type="number" value="7">
+              </p>
+          </div>
+
+
+
+          <div class="check">
+            <fieldset class="check__column">
+              <ul class="check__list">
+                <li class="check__item">
+                  <label for="slim" class="check__label">
+                    <input id="slim" class="check__input" type="checkbox" checked>
+                    <span class="check__indicator"></span>
+                    <span class="check__title">Похудение</span>
+                  </label>
+                </li>
+                <li class="check__item">
+                  <label for="pro" class="check__label">
+                    <input id="pro" class="check__input" type="checkbox">
+                    <span class="check__indicator"></span>
+                    <span class="check__title">Набор массы</span>
+                  </label>
+                </li>
+                <li class="check__item">
+                  <label for="advice" class="check__label">
+                    <input id="advice" class="check__input" type="checkbox">
+                    <span class="check__indicator"></span>
+                    <span class="check__title">Не знаю (Нужен ваш совет)</span>
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          </form>
+        </div>
+
+        <div class="facts">
+          <section class="facts__wrapper">
+            <h2>Контактные данные
+              (владельца кота)</h2>
+          </section>
+        </div>
+
+
+        <div class="additionally">
+          <section class="additionally__wrapper">
+            <h2 class="additionally__title">Дополнительно</h2>
+            <form action="https://echo.htmlacademy.ru" method="POST">
+              <ul class="additionally__list">
+                <li class="additionally__item">
+                  <label for="add-1" class="additionally__label">
+                    <input class="additionally__input" type="checkbox" id="add-1" checked>
+                    <span class="additionally__indicator"></span>
+                    <span class="additionally__line">Сахарозаменитель</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="add-2">
+                    <input class="additionally__input" id="add-2" type="checkbox">
+                    <span class="additionally__indicator"></span>
+                    <span class="additionally__line">Питьевая вода</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="add-3">
+                    <input id="add-3" type="checkbox" class="additionally__input">
+                    <span class="additionally__indicator"></span>
+                    <span class="additionally__line">Молоко</span>
+                  </label>
+                </li>
+                <li class="additionally__item">
+                  <label class="additionally__label" for="add-4">
+                    <input class="additionally__input" id="add-4" type="checkbox">
+                    <span class="additionally__indicator"></span>
+                    <span class="additionally__line">Витамины</span>
+                  </label>
+                </li>
+              </ul>
+            </form>
+          </section>
+        </div>
+
+
+        <div class="location">
+          <div class="location__column">
+            <section class="cooperation">
+              <h2 class="cooperation__title"> приглашаем к сотрудничеству дилеров!</h2>
+              <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span
+                  class="cooperation__position">Санкт-Петербург</span></p>
+            </section>
+          </div>
+
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1588005519265!5m2!1sru!2sru"
+              width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+              tabindex="0"></iframe>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">

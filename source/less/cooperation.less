@@ -1,0 +1,44 @@
+.cooperation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooperation__title {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  max-width: 123px;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation__title {
+    font-size: 20px;
+    line-height: 25px;
+  }
+}
+
+.cooperation__address {
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  color: @greyish-brown;
+  max-width: 135px;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation__address {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    max-width: 160px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation__position {
+    display: inline-block;
+    margin-top: 12px;
+  }
+}
