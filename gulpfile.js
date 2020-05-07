@@ -59,14 +59,14 @@ gulp.task("sprite", function () {
     .src("source/img/icon-*.svg")
     .pipe(svgstore({ inlineSvg: true }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("html", function () {
   return gulp
     .src("source/*.html")
     .pipe(posthtml([include()]))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("source"));
 });
 
 gulp.task("minify", function () {
