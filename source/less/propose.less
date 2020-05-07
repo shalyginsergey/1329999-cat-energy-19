@@ -7,7 +7,7 @@
 
 @media (min-width: @tablet-width) {
   .propose {
-    padding: 28px 37px 28px 38px;
+    padding: 28px 37px 25px 38px;
     border: 1px solid @very-light-pink-three;
     border-bottom: 0;
   }
@@ -29,7 +29,7 @@
     display: flex;
     padding: 0;
     align-items: center;
-    padding-top: 15px;
+    padding-top: 18px;
     padding-bottom: 15px;
   }
 }
@@ -107,7 +107,7 @@
   line-height: 14px;
   color: @greyish-brown;
   padding-bottom: 14px;
-  padding-top: 15px;
+  padding-top: 11px;
   width: 100%;
 }
 
@@ -117,15 +117,9 @@
     padding-bottom: 0;
     font-size: 16px;
     line-height: 20px;
-    width: 50%;
+    width: auto;
     display: flex;
     justify-content: flex-end;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .propose__table {
-    width: auto;
   }
 }
 
@@ -133,6 +127,12 @@
   .propose__table {
     justify-content: flex-start;
     width: 50%;
+    padding-left: 18px;
+  }
+
+  .propose__table tbody {
+    display: table;
+    width: 100%;
   }
 }
 
@@ -142,7 +142,7 @@
 
 @media (min-width: @tablet-width) {
   .propose__table td:last-child {
-    padding-left: 52px;
+    padding-left: 44px;
   }
 }
 
@@ -155,7 +155,7 @@
 
 @media (min-width: @tablet-width) {
   .propose__column {
-    padding-bottom: 26px;
+    padding-bottom: 20px;
     display: flex;
     justify-content: space-between;
   }
@@ -165,6 +165,7 @@
   .propose__column {
     padding-bottom: 0;
     width: 100%;
+    margin-top: 10px;
     flex-direction: row;
     justify-content: space-between;
   }

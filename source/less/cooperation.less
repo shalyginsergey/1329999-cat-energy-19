@@ -2,14 +2,25 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .cooperation {
+    padding: 63px 0;
+  }
 }
 
 .cooperation__title {
-  font-weight: 400;
   font-size: 16px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", sans-serif;
   line-height: 20px;
+  flex: 0 0 50%;
+  margin: 0;
   text-transform: uppercase;
-  max-width: 123px;
+  max-width: 160px;
 }
 
 @media (min-width: @tablet-width) {
@@ -20,11 +31,14 @@
 }
 
 .cooperation__address {
+  flex: 0 0 50%;
+  margin: 0;
+  line-height: 21px;
+  max-width: 160px;
+  width: 100%;
   font-family: "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 20px;
   color: @greyish-brown;
-  max-width: 135px;
+  text-align: left;
 }
 
 @media (min-width: @tablet-width) {
@@ -36,9 +50,15 @@
   }
 }
 
+@media (min-width: @desktop-width) {
+  .cooperation__address {
+    text-align: left;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .cooperation__position {
     display: inline-block;
-    margin-top: 12px;
+    margin-top: 20px;
   }
 }
