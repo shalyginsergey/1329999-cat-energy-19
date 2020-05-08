@@ -1,0 +1,124 @@
+.additional {
+  margin-bottom: 35px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional {
+    margin-bottom: 76px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional {
+    margin-bottom: 86px;
+  }
+}
+
+.additional__title {
+  display: inline-block;
+  position: relative;
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 30px;
+  padding-right: 22px;
+  background-color: @white-two;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__title {
+    margin-bottom: 80px;
+    font-size: 36px;
+    line-height: 36px;
+    padding-right: 32px;
+    padding-left: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__title {
+    margin-left: -40px;
+  }
+}
+
+.additional__title::after,
+.additional__title::before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background: @leaf;
+  top: 50%;
+  width: 100vw;
+  margin-top: 2px;
+  z-index: -1;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__title::after {
+    left: 20px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .additional__title::before {
+    right: 0;
+  }
+}
+
+.additional__column {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__column {
+    margin-left: -30px;
+    margin-right: -30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__column {
+    display: flex;
+    margin-left: -40px;
+    margin-right: -40px;
+  }
+}
+
+.additional__row {
+  .pd-20();
+  margin-bottom: 40px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional__row {
+    .pd-30();
+    margin-bottom: 73px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__row {
+    .pd-40();
+    margin-bottom: 0;
+    width: 100%;
+  }
+}
+
+.additional__wrapper {
+  .pd-20();
+}
+
+@media (min-width: @tablet-width) {
+  .additional__wrapper {
+    .pd-30();
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional__wrapper {
+    .pd-40();
+  }
+}

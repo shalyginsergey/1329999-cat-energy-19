@@ -1,0 +1,26 @@
+.map {
+  height: 365px;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (min-width: @tablet-width) {
+  .map {
+    height: 395px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map {
+    height: 400px;
+    position: relative;
+  }
+}
+
+.map iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}

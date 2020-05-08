@@ -7,15 +7,30 @@
   color: @greyish-brown;
 }
 
+.copyright__item:active {
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .copyright__item {
-    margin-right: 23px;
+    margin-right: 15px;
   }
 }
 
 .copyright__logo {
-  width: 27px;
-  height: 34px;
+  width: 40px;
+  height: 40px;
+  margin-right: -5px;
+  fill: @brownish-grey;
+}
+
+.copyright__logo:hover {
+  fill: @leaf;
+}
+
+.copyright__logo:active {
+  fill: @leaf;
+  opacity: 0.3;
 }
 
 .copyright__link {
@@ -26,8 +41,8 @@
 }
 
 .copyright {
-  padding-bottom: 22px;
-  padding-top: 22px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 @media (min-width: @tablet-width) {

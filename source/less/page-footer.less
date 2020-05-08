@@ -42,8 +42,20 @@
   flex-wrap: wrap;
 }
 
+@media (min-width: @tablet-width) {
+  .page-footer__column {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-footer__column {
+    margin-bottom: 0;
+  }
+}
+
 .page-footer__logo {
-  padding-top: 39px;
+  padding-top: 33px;
   padding-bottom: 31px;
 }
 
@@ -57,4 +69,18 @@
 .page-footer__logo-image {
   width: 128px;
   height: 24px;
+}
+
+.page-footer__logo-image:hover {
+  opacity: 0.8;
+}
+
+.page-footer__logo-image:active {
+  opacity: 0.6;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer__logo-image {
+    margin-right: 15px;
+  }
 }

@@ -1,7 +1,6 @@
 .social__link--vk {
   width: 22px;
   height: 12px;
-  margin-right: 18px;
 }
 
 @media (min-width: @tablet-width) {
@@ -14,8 +13,6 @@
 .social__link--insta {
   width: 17px;
   height: 17px;
-  margin-left: 18px;
-  margin-right: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -28,7 +25,6 @@
 .social__link--fb {
   width: 10px;
   height: 19px;
-  margin-left: 18px;
 }
 
 @media (min-width: @tablet-width) {
@@ -60,4 +56,25 @@
     border-top: none;
     border-bottom: none;
   }
+}
+
+.social__item {
+  margin-left: 14px;
+  margin-right: 23px;
+}
+
+@media (min-width: @tablet-width) {
+  .social__item {
+    margin-left: 17px;
+    margin-right: 14px;
+  }
+}
+
+.social__link:hover {
+  fill: @leaf;
+}
+
+.social__link:active {
+  fill: @leaf;
+  opacity: 0.3;
 }

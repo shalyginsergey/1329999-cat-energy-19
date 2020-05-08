@@ -1,0 +1,132 @@
+.check {
+  margin-left: -20px;
+  margin-right: -20px;
+  border-top: 1px solid @border;
+  border-bottom: 1px solid @border;
+  margin-bottom: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .check {
+    margin-bottom: 79px;
+    margin-top: 48px;
+    margin-left: 40px;
+    margin-right: 40px;
+    border: 1px solid @border;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .check {
+    width: 50%;
+    margin-bottom: 0;
+    margin-top: 35px;
+    margin-right: 0;
+    min-height: 196px;
+  }
+}
+
+.check__column {
+  border: none;
+  .pd-20();
+  padding-top: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .check__column {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 32px;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .check__column {
+    padding-top: 36px;
+  }
+}
+
+.check__input {
+  display: none;
+}
+
+.check__item {
+  margin-left: 46px;
+  margin-bottom: 24px;
+}
+
+@media (min-width: @tablet-width) {
+  .check__item {
+    margin-bottom: 33px;
+    margin-left: 59px;
+  }
+}
+
+.check__label {
+  position: relative;
+  cursor: pointer;
+}
+
+.check__label:active {
+  opacity: 0.3;
+}
+
+.check__label input[type="checkbox"]:checked + .check__indicator::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  width: 12px;
+  height: 12px;
+  background-color: @leaf;
+  z-index: 10;
+  border-radius: 25px;
+}
+
+@media (min-width: @tablet-width) {
+  .check__label input[type="checkbox"]:checked + .check__indicator::before {
+    left: 10px;
+    width: 18px;
+    top: 10px;
+    height: 18px;
+  }
+}
+
+.check__label input[type="checkbox"] + .check__indicator {
+  position: absolute;
+  left: -46px;
+  top: -3px;
+  width: 30px;
+  height: 30px;
+  border: solid 1px @very-light-pink-three;
+  border-radius: 25px;
+  background-color: transparent;
+}
+
+.check__label input[type="checkbox"] + .check__indicator:hover {
+  border: solid 1px @pinkish-grey;
+}
+
+@media (min-width: @tablet-width) {
+  .check__label input[type="checkbox"] + .check__indicator {
+    width: 40px;
+    height: 40px;
+    left: -59px;
+  }
+}
+
+.check__title {
+  font-size: 16px;
+  line-height: 18px;
+  color: @light-black;
+  text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .check__title {
+    line-height: 20px;
+    font-size: 20px;
+  }
+}

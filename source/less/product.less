@@ -71,7 +71,7 @@
   color: #111111;
   max-width: 100px;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
   font-weight: 400;
   line-height: 20px;
   text-transform: uppercase;
@@ -96,6 +96,10 @@
   font-family: "Arial", sans-serif;
 }
 
+.product__table td:last-child {
+  text-align: right;
+}
+
 @media (min-width: @tablet-width) {
   .product__table {
     margin-bottom: 30px;
@@ -112,5 +116,11 @@
 
   .product__table td:last-child {
     text-align: right;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .product__button {
+    margin-top: -1px;
   }
 }
