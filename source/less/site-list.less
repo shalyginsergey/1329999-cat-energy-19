@@ -25,6 +25,10 @@
     background: @leaf;
     transform: translateY(-5px);
   }
+
+  .site-list__item--active:hover::after {
+    display: none;
+  }
 }
 
 .site-list__link {
@@ -85,11 +89,11 @@
 }
 
 @media (min-width: @desktop-width) {
-  .site-list__link-white--active::after {
+  .site-list__item--active-white::after {
     background: @white-two;
   }
 
-  .site-list__link-white--active:hover::after {
+  .site-list__item--active-white:hover::after {
     display: none;
   }
 }
