@@ -27,6 +27,7 @@
   margin-bottom: 30px;
   margin-top: 0;
   padding-top: 37px;
+  position: relative;
 }
 
 @media (min-width: @tablet-width) {
@@ -42,6 +43,24 @@
   .example__title {
     padding-top: 0;
     margin-bottom: 70px;
+  }
+}
+
+.example__title::after {
+  content: "";
+  position: absolute;
+  height: 22px;
+  background-color: @white-two;
+  width: 100vh;
+  top: 0;
+  left: 0;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+@media (min-width: @tablet-width) {
+  .example__title::after {
+    display: none;
   }
 }
 

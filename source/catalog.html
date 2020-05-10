@@ -64,10 +64,10 @@
               <img class="page-header__logo-image" src="img/logo-mobile.svg" alt="Кэт Энерджи">
             </picture>
           </a>
-          <button class="page-header__toggle">
-            <span></span>
+          <button class="page-header__toggle page-header__toggle--close">
+            <span>Закрыть</span>
           </button>
-          <nav class="main-nav">
+          <nav class="main-nav main-nav--open">
             <ul class="main-nav__list site-list">
               <li class="site-list__item">
                 <a class="site-list__link" href="index.html">Главная</a>
@@ -123,7 +123,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>700 р.</td>
+                      <td>700 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -167,7 +167,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>1000 р.</td>
+                      <td>1000 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -210,7 +210,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>700 р.</td>
+                      <td>700 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -253,7 +253,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>1000 р.</td>
+                      <td>1000 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -297,7 +297,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>400 р.</td>
+                      <td>400 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -341,7 +341,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>700 р.</td>
+                      <td>700 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -382,7 +382,7 @@
                     </tr>
                     <tr>
                       <td>Цена </td>
-                      <td>500 р.</td>
+                      <td>500 Р.</td>
                     </tr>
                   </tbody>
                 </table>
@@ -414,8 +414,8 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="propose__button__wrapper">
-                  <a class="product__button button" href="#">Заказать</a>
+                <div class="propose__wrap">
+                  <a class="propose__wrap-btn button" href="#">Заказать</a>
                 </div>
               </article>
               <article class="propose">
@@ -430,8 +430,8 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="propose__button__wrapper">
-                  <a class="product__button button" href="#">Заказать</a>
+                <div class="propose__wrap">
+                  <a class="propose__wrap-btn button" href="#">Заказать</a>
                 </div>
               </article>
               <article class="propose">
@@ -446,8 +446,8 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="propose__button__wrapper">
-                  <a class="product__button button" href="#">Заказать</a>
+                <div class="propose__wrap">
+                  <a class="propose__wrap-btn button" href="#">Заказать</a>
                 </div>
               </article>
               <article class="propose">
@@ -462,8 +462,8 @@
                     </tbody>
                   </table>
                 </div>
-                <div class="propose__button__wrapper">
-                  <a class="product__button button" href="#">Заказать</a>
+                <div class="propose__wrap">
+                  <a class="propose__wrap-btn button" href="#">Заказать</a>
                 </div>
               </article>
             </div>
@@ -501,9 +501,11 @@
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__column page-footer__logo">
-          <svg class="page-footer__logo-image">
-            <use xlink:href="#footer-logo"></use>
-          </svg>
+          <a href="index.html" class="page-footer__logo__link">
+            <svg class="page-footer__logo-image">
+              <use xlink:href="#footer-logo"></use>
+            </svg>
+          </a>
         </div>
         <div class="page-footer__column social">
           <ul class="social__list">
