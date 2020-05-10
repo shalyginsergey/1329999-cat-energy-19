@@ -41,13 +41,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .comments__title::before,
-  .comments__title:after {
+  .comments__title::before {
+    right: 0;
     top: 85%;
   }
 
-  .comments__title::before {
-    right: 0;
+  .comments__title::after {
+    top: 85%;
   }
 }
 
@@ -63,7 +63,6 @@
   text-transform: uppercase;
   color: @greyish-brown;
   margin-bottom: 27px;
-  letter-spacing: -0.4px;
 }
 
 @media (min-width: @tablet-width) {
