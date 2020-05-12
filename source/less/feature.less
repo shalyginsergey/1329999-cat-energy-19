@@ -13,8 +13,19 @@
   }
 }
 
+.feature__wrapper {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
 @media (min-width: @desktop-width) {
   .feature__wrapper {
+    flex: 0 0 50%;
+    max-width: 50%;
     .pd-40();
   }
+}
+
+.feature__ident {
+  margin-top: 20px;
 }
